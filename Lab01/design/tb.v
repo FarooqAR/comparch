@@ -17,8 +17,8 @@ module tb();
   
   initial begin
     reset = 1'b1;
-    #15 reset = 1'b0;
-    #360 reset = 1'b1;
+    #20 reset = 1'b0;
+    #320 reset = 1'b1;
   end
   
   initial

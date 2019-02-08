@@ -1,0 +1,71 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/ripple_carry_counter/pa.fromHdl.tcl
+# create_project -name ripple_carry_counter -dir "C:/ripple_carry_counter/planAhead_run_2" -part xc6slx9csg324-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "ripple_carry_counter.ucf" [current_fileset -constrset]
+Adding file 'C:/ripple_carry_counter/ripple_carry_counter.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {ripple_carry_counter.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top ripple_carry_counter $srcset
+# add_files [list {ripple_carry_counter.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9csg324-3
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/ripple_carry_counter/ripple_carry_counter.v" into library work
+CRITICAL WARNING: [EDIF 20-96] Could not resolve non-primitive black box cell 'T_FF' instantiated as 'tff0' [C:/ripple_carry_counter/ripple_carry_counter.v:5]
+Resolution: File names need to match cell names: an EDIF definition will be found in T_FF.edf; an HDL definition may be placed in any Verilog/VHDL file.
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/csg324/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/ripple_carry_counter/ripple_carry_counter.ucf]
+Finished Parsing UCF File [C:/ripple_carry_counter/ripple_carry_counter.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 9500c868
+open_rtl_design: Time (s): elapsed = 00:00:10 . Memory (MB): peak = 680.395 ; gain = 175.188
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin C2 [get_ports {q[3]}]
+endgroup
+set_property package_pin "" [get_ports [list  {q[2]}]]
+startgroup
+set_property package_pin C2 [get_ports {q[3]}]
+endgroup
+startgroup
+set_property package_pin F5 [get_ports {q[2]}]
+endgroup
+startgroup
+set_property package_pin L6 [get_ports {q[1]}]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports {q[0]}]
+endgroup
+startgroup
+set_property package_pin V10 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin B3 [get_ports reset]
+endgroup
+write_ucf C:/ripple_carry_counter/planAhead_run_2/elab_constrs_1.ucf -mode port
+write_ucf C:/ripple_carry_counter/ripple_carry_counter.ucf -mode port
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Fri Feb 08 16:23:55 2019...
+INFO: [Common 17-83] Releasing license: PlanAhead

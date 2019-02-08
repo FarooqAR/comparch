@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Feb 08 16:18:04 2019
+# Process ID: 8264
+# Log file: C:/ripple_carry_counter/planAhead_run_2/planAhead.log
+# Journal file: C:/ripple_carry_counter/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/ripple_carry_counter/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin C2 [get_ports {q[3]}]
+endgroup
+set_property package_pin "" [get_ports [list  {q[2]}]]
+startgroup
+set_property package_pin C2 [get_ports {q[3]}]
+endgroup
+startgroup
+set_property package_pin F5 [get_ports {q[2]}]
+endgroup
+startgroup
+set_property package_pin L6 [get_ports {q[1]}]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports {q[0]}]
+endgroup
+startgroup
+set_property package_pin V10 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin B3 [get_ports reset]
+endgroup
+write_ucf C:/ripple_carry_counter/planAhead_run_2/elab_constrs_1.ucf -mode port
+write_ucf C:/ripple_carry_counter/ripple_carry_counter.ucf -mode port

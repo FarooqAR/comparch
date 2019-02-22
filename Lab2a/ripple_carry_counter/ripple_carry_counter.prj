@@ -1,4 +1,0 @@
-verilog work "D_FF.v"
-verilog work "T_FF.v"
-verilog work "clock_divider.v"
-verilog work "ripple_carry_counter.v"

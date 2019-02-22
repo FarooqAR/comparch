@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\ripple_carry_counter\ripple_carry_counter.ncd
-OUTFILE=C:\ripple_carry_counter\ripple_carry_counter.bit
-FAMILY=Spartan6
-PART=xc6slx9-3csg324
-WORKINGDIR=C:\ripple_carry_counter
-LICENSE=WebPack
-USER_INFO=__0_0_0

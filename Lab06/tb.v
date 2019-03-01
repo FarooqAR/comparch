@@ -4,8 +4,8 @@ reg [63:0] Inst_Address;
 wire [31:0] Instruction;
 
 Instruction_Memory im0(
-	.Inst_Address(Inst_Address),
-	.Instruction(Instruction)
+	.instruction(Inst_Address),
+	.Inst_Address(Inst_Address)
 );
 
 initial

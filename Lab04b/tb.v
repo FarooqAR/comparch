@@ -7,16 +7,20 @@ wire [63:0] readData2;
 reg clk, reset;
 
 Instruction_Memory im0(
+	// input
 	.Inst_Address(Inst_Address),
+	// output
 	.Instruction(Instruction)
 );
  
 top t0(
+	// inputs
 	.instruction(Instruction),
-	.readData1(readData1),
-	.readData2(readData2),
 	.clk(clk),
-	.reset(reset)
+	.reset(reset),
+	// outputs
+	.readData1(readData1),
+	.readData2(readData2)
 );
 always
 begin

@@ -4,7 +4,7 @@ reg [63:0] Inst_Address;
 wire [31:0] Instruction;
 
 Instruction_Memory im0(
-	.instruction(Inst_Address),
+	.instruction(Instruction),
 	.Inst_Address(Inst_Address)
 );
 

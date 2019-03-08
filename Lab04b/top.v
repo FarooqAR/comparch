@@ -14,17 +14,19 @@ wire [2:0] funct3;
 wire [6:0] funct7; 
 
 InstructionParser ip0(
+	// outputs
 	.rs1(rs1),
 	.rs2(rs2),
 	.rd(rd),
 	.opcode(opcode),
 	.funct3(funct3),
 	.funct7(funct7),
+	// input
 	.instruction(instruction)
 );
 
 registerFile rf0(
-	.WriteData(),
+	.WriteData(64'b0),
 	.rs1(rs1),
 	.rs2(rs2),
 	.rd(rd),

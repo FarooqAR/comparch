@@ -8,6 +8,6 @@ vsim -novopt work.tb
 view wave
 
 #adding waves
-add wave sim:/tb/Instruction
+add wave sim:/tb/instruction
 add wave sim:/tb/Inst_Address
 run 200ns

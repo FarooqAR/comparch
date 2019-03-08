@@ -1,10 +1,10 @@
 module tb();
 
 reg [63:0] Inst_Address;
-wire [31:0] Instruction;
+wire [31:0] instruction;
 
 Instruction_Memory im0(
-	.instruction(Instruction),
+	.instruction(instruction),
 	.Inst_Address(Inst_Address)
 );
 

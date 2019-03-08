@@ -1,6 +1,6 @@
 module Instruction_Memory(
 	input [63:0] Inst_Address,
-	output reg [31:0] Instruction
+	output reg [31:0] instruction
 );
 
 reg [7:0] Instructions [15:0];
@@ -34,6 +34,6 @@ begin
 	i2 = Instructions[Inst_Address+1];
 	i3 = Instructions[Inst_Address+2];
 	i4 = Instructions[Inst_Address+3];
-	Instruction = {i4, i3, i2, i1};
+	instruction = {i4, i3, i2, i1};
 end
 endmodule

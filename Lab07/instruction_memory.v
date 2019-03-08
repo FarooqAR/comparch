@@ -30,10 +30,10 @@ end
 
 always @ (Inst_Address)
 begin
-	i1 = Instructions[Inst_Address % 16];
-	i2 = Instructions[(Inst_Address + 1) % 16];
-	i3 = Instructions[(Inst_Address + 2) % 16];
-	i4 = Instructions[(Inst_Address + 3) % 16];
+	i1 = Instructions[Inst_Address[3:0]];
+	i2 = Instructions[(Inst_Address[3:0] + 1)];
+	i3 = Instructions[(Inst_Address[3:0] + 2)];
+	i4 = Instructions[(Inst_Address[3:0] + 3)];
 	instruction = {i4, i3, i2, i1};
 end
 endmodule

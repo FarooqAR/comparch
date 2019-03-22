@@ -1,27 +1,15 @@
 module tb();
 
-wire Branch, MemRead, MemToReg, MemWrite, ALUSrc, RegWrite;
-wire [1:0] ALUOp;
 reg [6:0] opcode;
 wire [3:0] Operation;
 reg [3:0] Funct;
 
-Control_Unit cu0 (
+top t0(
 	.opcode(opcode),
-	.Branch(Branch),
-	.MemRead(MemRead),
-	.MemToReg(MemToReg),
-	.ALUOp(ALUOp),
-	.MemWrite(MemWrite),
-	.ALUSrc(ALUSrc),
-	.RegWrite(RegWrite)
+	.Operation(Operation),
+	.Funct(Funct)
 );
 
-ALU_Control ac0 (
-	.ALUOp(ALUOp),
-	.Funct(Funct),
-	.Operation(Operation)
-);
 initial
 begin
 

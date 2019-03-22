@@ -19,7 +19,6 @@ Funct = 4'b0000;
 #10 Funct = 4'b0111;
 #10 Funct = 4'b0110;
 #15 opcode = 7'b0000011;
-Funct = 4'bxxxx;
 #15 opcode = 7'b0100011;
 #15 opcode = 7'b1100011;
 

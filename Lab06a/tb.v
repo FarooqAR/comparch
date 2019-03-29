@@ -12,6 +12,8 @@ initial
 begin
 	Inst_Address = 64'd0;
 	#50 Inst_Address = 64'd4;
+	#50 Inst_Address = 64'd8;
+	#50 Inst_Address = 64'd12;
 end
 
 endmodule

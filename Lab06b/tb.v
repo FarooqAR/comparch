@@ -24,6 +24,6 @@ begin
 	Mem_Addr = 64'd0;
 	#20 MemWrite = 1;
 	Mem_Addr = 64'd1;
-	Write_Data = 64'hFEDCBA9876543210;
+	Write_Data = 64'd89;
 end
 endmodule

@@ -36,6 +36,7 @@ RegWrite = 1;
 rs1 = 0;
 rs2 = 0;
 rd = 0;
+reset = 1;
 WriteData = 10;
 
 
@@ -43,6 +44,7 @@ WriteData = 10;
 
 #20 RegWrite = 0;
 rs1 = 0;
+reset = 0;
 
 // testcase 3 (readData1 and readData2 should be 0)
 
@@ -71,6 +73,7 @@ rd = 2;
 WriteData = 33;
 rs1 = 2;
 reset = 1;
+#1 reset = 0; // readData1 now should be 33
 
 // testcase6 shouldn't write at RegWrite=0
 #20

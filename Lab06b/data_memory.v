@@ -19,7 +19,7 @@ initial
 begin
 	for (i = 0; i < 64; i = i + 1)
 	begin
-			memory[i] = $urandom % 32;
+			memory[i] = i;
 	end
 end
 

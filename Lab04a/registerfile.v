@@ -54,7 +54,7 @@ begin
 end
 
 
-always@(rs1 or rs2)
+always@(rs1 or rs2 or reset)
 begin
 	if (reset) 
 		begin

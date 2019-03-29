@@ -14,7 +14,7 @@ initial
 begin
 Registers[0] = 64'b0;
 Registers[1] = 64'b0;
-Registers[2] = 64'b10;
+Registers[2] = 64'b10;	
 Registers[3] = 64'b11;
 Registers[4] = 64'b100;
 Registers[5] = 64'b101;
@@ -54,7 +54,7 @@ begin
 end
 
 
-always@(rs1 or rs2)
+always@(rs1 or rs2 or reset)
 begin
 	if (reset) 
 		begin

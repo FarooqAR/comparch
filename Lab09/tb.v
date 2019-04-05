@@ -13,7 +13,8 @@ always
 initial
 begin
 	clk = 0;
-	reset = 0;
+	reset = 1;
+	#7 reset = 0;
 end
 
 endmodule;

@@ -23,6 +23,7 @@ wire [63:0] readData1;
 wire [63:0] readData2;
 wire [2:0] funct3; 
 wire [6:0] funct7; 
+wire [3:0] Operation;
 
 assign pc_select = Branch & Zero;
 assign Funct = {instruction[30], instruction[14:12]};

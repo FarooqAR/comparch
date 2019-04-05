@@ -12,9 +12,11 @@ begin
 		3'b000:
 			{ALUSrc, MemToReg, RegWrite, MemRead, MemWrite, Branch, ALUOp} = 8'b11110000;
 		3'b010:
-			{ALUSrc, MemToReg, RegWrite, MemRead, MemWrite, Branch, ALUOp} = 8'b1x001000;
+			{ALUSrc, MemToReg, RegWrite, MemRead, MemWrite, Branch, ALUOp} = 8'b10001000;
 		3'b110:
-			{ALUSrc, MemToReg, RegWrite, MemRead, MemWrite, Branch, ALUOp} = 8'b0x000101;
+			{ALUSrc, MemToReg, RegWrite, MemRead, MemWrite, Branch, ALUOp} = 8'b00000101;
+		3'b001:
+			{ALUSrc, MemToReg, RegWrite, MemRead, MemWrite, Branch, ALUOp} = 8'b10100010;
 	endcase
 end
 

@@ -6,6 +6,8 @@ module Mem(
 );
 reg [7:0] mem [15:0];
 integer i;
+
+
 initial
 begin
 	for (i = 0; i < 16; i = i + 1)
@@ -13,6 +15,8 @@ begin
 		mem[i] = i;
 	end
 end
+
+
 always @ (posedge clk)
 begin
 	if (reset == 1)
@@ -27,7 +31,7 @@ begin
 	begin
 		case (size)
 		2'b00:
-			data = mem[addr % 16];
+			data = mem[addr]; // no need to apply module since max addr value would be 15
 		2'b01:
 			data = {mem[(addr + 1) % 16], mem[addr % 16]};
 		2'b10:

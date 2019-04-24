@@ -7,7 +7,6 @@ vsim -novopt work.tb
 #view wave
 view wave
 
-#adding waves
-add wave sim:/tb/*
+do wave.do
 
 run 200ns

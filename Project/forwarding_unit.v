@@ -1,6 +1,6 @@
 module forwarding_unit 
 (
-	input clk,    // Clock
+	input clk,  
 	input [4:0] id_ex_rs1,
 	input [4:0] id_ex_rs2,
 	input ex_mem_RegWrite, 
@@ -44,7 +44,6 @@ module forwarding_unit
 				end
 			end
 		end
-		
 	end
 
 

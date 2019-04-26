@@ -8,5 +8,10 @@ add wave sim:/forw_unit_tb/ex_mem_rd
 add wave sim:/forw_unit_tb/mem_wb_rd
 add wave sim:/forw_unit_tb/ex_mem_RegWrite
 add wave sim:/forw_unit_tb/mem_wb_RegWrite
+add wave sim:/forw_unit_tb/ForwardA
+add wave sim:/forw_unit_tb/ForwardB
 
 run 200ns
+
+
+

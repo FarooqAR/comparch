@@ -1,5 +1,6 @@
 module MEM_WB():
 (
+    input clk,
     input [1:0] WB,
     output reg Mem_to_Reg, Reg_Write,
     
@@ -10,7 +11,7 @@ module MEM_WB():
     output reg [4:0] rd_out,
 
     input [63:0] Mem_Address,
-    output reg [63:0] Mem_Address_out,
+    output reg [63:0] Mem_Address_out
 
 );
 

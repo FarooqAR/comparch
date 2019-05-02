@@ -2,7 +2,7 @@
 vlog tb_final.v adder.v alu_64.v alu_control.v control_unit.v data_memory.v ex_mem.v forward_A_mux.v forward_B_mux.v forwarding_unit.v id_ex.v if_id.v imm_data_extractor.v instruction_memory.v instruction_parser.v mem_wb.v mux.v pc.v pipelined_processor.v registerfile.v 
 
 #no optimization
-vsim -novopt work.tb
+vsim -novopt work.tb_final
 
 #view wave
 view wave

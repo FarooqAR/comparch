@@ -1,4 +1,4 @@
-module MEM_WB():
+module MEM_WB
 (
     input clk,
     input [1:0] WB,

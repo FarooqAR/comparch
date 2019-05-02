@@ -1,6 +1,6 @@
 module pipelined_processor (
 	input clk,    // Clock
-	input reset,  // Asynchronous reset active low
+	input reset  // Asynchronous reset active low
 );
 
 	//Wires
@@ -42,7 +42,7 @@ module pipelined_processor (
 	wire [1:0] ForwardA;
 	wire [1:0] ForwardB;
 	wire [63:0] branch_adder_out;
-	wire [1:0] alu_c_aluop;
+	wire [3:0] alu_c_aluop;
 	wire [63:0] alu_result;
 	wire Zero;
 	wire [1:0] mem_WB_out;
@@ -150,7 +150,7 @@ module pipelined_processor (
 		.ImmediateData(imm_data),
 		.ImmediateData_Out(ex_imm_data),
 		.Funct_Instruction(Funct),
-		.Funct_Out(ex_Funct)
+		.Funct_Out(ex_Funct),
 		.WB({RegWrite, MemToReg}),
 		.WB_Out(ex_WB_out),
 		.M({Branch, MemWrite, MemRead}),

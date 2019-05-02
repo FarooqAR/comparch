@@ -24,7 +24,7 @@ module ID_EX(
   output reg [63:0] ImmediateData_Out,
   
   input [3:0] Funct_Instruction, // Instruction [30, 14-12]
-  output [3:0] Funct_Out, // Instruction [30, 14-12]
+  output reg [3:0] Funct_Out, // Instruction [30, 14-12]
 
   // control
   input [1:0] WB,

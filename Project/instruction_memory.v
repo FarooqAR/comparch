@@ -25,7 +25,7 @@ begin
 	Instructions[12] = 8'b10110011;
 	Instructions[13] = 8'b11110101;
 	Instructions[14] = 8'b10010110;
-	Instructions[15] = 8'00000000;
+	Instructions[15] = 8'b00000000;
 end
 
 always @ (Inst_Address)

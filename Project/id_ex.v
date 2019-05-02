@@ -23,8 +23,8 @@ module ID_EX(
   input [63:0] ImmediateData,
   output reg [63:0] ImmediateData_Out,
   
-  input [31:0] Instruction,
-  output [3:0] Funct, // Instruction [30, 14-12]
+  input [3:0] Funct_Instruction, // Instruction [30, 14-12]
+  output [3:0] Funct_Out, // Instruction [30, 14-12]
 
   // control
   input [1:0] WB,
@@ -48,7 +48,7 @@ begin
   ReadData1_Out = ReadData1;
   ReadData2_Out = ReadData2;
   ImmediateData_Out = ImmediateData;
-  Funct = {Instruction[30], Instruction[14:12]};
+  Funct_Out = Funct_Instruction;
   
   // control
   WB_Out = WB;

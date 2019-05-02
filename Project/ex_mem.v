@@ -28,7 +28,7 @@ module EX_MEM(
 always @ (posedge clk)
 begin
   // control
-  WB_Out = W;
+  WB_Out = WB;
   {Branch, MemWrite, MemRead} = M;
   
   // data

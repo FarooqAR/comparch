@@ -44,7 +44,7 @@ begin
   Inst_Addr_Out = Inst_Addr;
   rs1_Out = rs1;
   rs2_Out = rs2;
-  rd_Out = rd_Out;
+  rd_Out = rd;
   ReadData1_Out = ReadData1;
   ReadData2_Out = ReadData2;
   ImmediateData_Out = ImmediateData;

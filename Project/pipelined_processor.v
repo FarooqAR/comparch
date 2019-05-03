@@ -107,7 +107,7 @@ module pipelined_processor (
 		.WriteData(WriteData), 
 		.rs1(id_rs1),
 		.rs2(id_rs2),
-		.rd(id_rd),
+		.rd(wb_rd),
 		.readData1(readData1),
 		.readData2(readData2),
 		.RegWrite(wb_RegWrite),

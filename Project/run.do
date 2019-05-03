@@ -11,5 +11,8 @@ view wave
 add wave sim:/tb_final/clk
 add wave sim:/tb_final/reset
 add wave sim:/tb_final/risc_v/*
+add wave sim:/tb_final/risc_v/MEM_WB/*
+add wave \
+{sim:/tb_final/risc_v/rf/Registers } 
 
 run 500ns

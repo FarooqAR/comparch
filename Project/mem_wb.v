@@ -22,6 +22,8 @@ module MEM_WB
       
       Read_Data_out = Read_Data;
       rd_out = rd;
+
+      Mem_Address_out = Mem_Address;
     end
 
 endmodule
